@@ -1,590 +1,470 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kauan Cybis</title>
-    <link rel="shortcut icon" href="logo_k1.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-                *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: poppins;
-    scroll-behavior: smooth;
-}
-a{
-    text-decoration: none;
-}
-ul{
-    list-style: none;
-}
-/*==main================================*/
-#main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 400px;
-    background-color: #131313;
-}
-/*==nav-bar=============================*/
-.navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    width: 90%;
-    margin: 0px auto;
-    padding: 30px 0px;
-}
-.logo{
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #1a1a1a;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-}
-
-.menu{
-    display: flex;
-    align-items: center;
-}
-.menu li a{
-    margin: 0px 30px;
-    color: #c9c9c9;
-    letter-spacing: 0.5px;
-    font-weight: 400;
-    transition: all ease 0.3s;
-}
-.nav-social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nav-social a{
-    color: #c9c9c9;
-    margin-left: 20px;
-    transition: all ease 0.3s;
-}
-.nav-social a:first-child{
-    margin-left: 0px;
-} 
-.menu li a:hover,
-.nav-social a:hover{
-    color: #ffffff;
-}
-
-
-/*==main-content=========================*/
-.main-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto;
-    max-width: 500px;
-    text-align: center;
-}
-.main-img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-.main-content strong{
-    color: #fefefe;
-    font-size: 1.6rem;
-    font-weight: 700;
-}
-.main-content span{
-    color: #8d94b4;
-    font-weight: 400;
-    font-size: 0.9rem;
-}
-.main-content h1{
-    font-size: 3rem;
-    color: #ffffff;
-    line-height: 3.4rem;
-    margin-top: 20px;
-}
-.main-content p{
-    color: #5e5e5e;
-    margin-top: 20px;
-    letter-spacing: 0.3px;
-}
-/*==about-me================================*/
-#about-me{
-    max-width: 800px;
-    width: 90%;
-    margin: 50px auto;
-}
-#about-me strong{
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: #8d94b4;
-}
-#about-me h2{
-    font-size: 4rem;
-    line-height: 4.4rem;
-    color: #272727;
-    font-weight: 800;
-    margin-top: 10px;
-}
-.about-text h3{
-    font-size: 3rem;
-    line-height: 3.4rem;
-    color: #272727;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-.about-text{
-    margin-top: 30px;
-    max-width: 85%;
-    margin-left: auto;
-}
-.about-text p{
-    color: #1a1a1a;
-    margin-bottom: 20px;
-    line-height: 1.4rem;
-    letter-spacing: 0.3px;
-}
-.about-text a{
-    width: 180px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background-color: #8d94b43b;
-    color: #1a1a1a;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-.about-text a i{
-    margin-left: 10px;
-}
-
-/*==our-services=====================*/
-#our-services{
-    width: 100%;
-    margin: 50px auto 0px auto;
-    background-color:#161616;
-    padding: 50px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid #eeeeee;
-}
-.services-heading{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    width: 90%;
-    margin: auto;
-}
-.services-heading-text strong{
-    color: #8d94b4;
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-.services-heading-text h2{
-    font-size: 2.2rem;
-    color:#ffffff;
-    font-weight: 700;
-    max-width: 600px;
-}
-.services-box-container,
-.team-box-container{
-    max-width: 1200px;
-    width: 90%;
-    margin: 40px auto;
-    overflow: hidden;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.service-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 100%;
-    border: 1px solid #242424;
-    padding: 30px;
-    background-color:#1a1a1a;
-}
-.service-box:hover{
-    border: 1px solid #8d94b4;
-}
-.service-box i{
-    font-size: 2rem;
-    color: #ffffff;
-    width: 60px;
-    height: 60px;
-    border-radius:5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #8d94b43b;
-}
-.service-box strong{
-    color:#ffffff;
-    font-size: 1.4rem;
-    margin-top: 20px;
-    font-weight: 600;
-}
-.service-box p{
-    font-size: 0.9rem;
-    line-height: 1.4rem;
-    color:#e7e7e7;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;  
-}
-.service-box a{
-    height: 45px;
-    background-color:#8d94b43b;
-    color: #ffffff;
-    padding: 0px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-    font-weight: 500;
-    border-radius: 5px;
-    margin-top: 30px;
-}
-
-.service-btn{
-    color: #ffffff;
-    font-size: 0.9rem;
-    margin-top: 10px;
-    text-align: center;
-    padding: 0px 10px;
-}
-.service-btn a{
-    color: #8d94b4;
-    text-decoration: underline;
-    font-weight: 600;
-}
-
-
-/*==contact=============================*/
-#contact{
-    width: 90%;
-    max-width: 950px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 80px auto;
-    text-align: center;
-}
-.contact strong{
-    color:#8d94b4;
-    font-size: 0.87rem;
-    letter-spacing: 1px;
-    font-weight: 600;
-}
-.contact h3{
-    color: #1d1d1d;
-    font-size: 2.37rem;
-    letter-spacing: 1px;
-}
-.contact p{
-    color: #202020;
-    max-width: 640px;
-    margin: 15px 0px;
-    letter-spacing: 1px;
-}
-.contact p b{
-    color: #252525;
-    font-weight: 500;
-}
-.contact a{
-    width: 200px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #8d94b43b;
-    color: #1a1a1a;
-    font-weight: 600;
-}
-.contact a i{
-    margin-left: 10px;
-}
-/*==footer========================*/
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 950px;
-    width: 100%;
-    margin: 70px auto 0px auto;
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #d8d8d8;
-}
-footer span{
-    color: #313131;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-}
-footer .footer-logo{
-    color: #1f1f1f;
-    font-weight: 500;
-    letter-spacing: 3px;
-    font-size: 1.3rem;
-}
-
-
-
-.menu-icon,
-.menu-btn{
-    display: none;
-}
-@media(max-width:1000px){
-    .navigation{
-        justify-content: space-between;
-        padding: 20px;
-        position: relative;
-        width: 100%;
-        z-index: 103;
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kauan Cybis — Portfólio</title>
+  <link rel="shortcut icon" href="logo_k1.ico" type="image/x-icon">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --laravel-purple: #8d94b4;
+      --bg: #0f0f10;
+      --card: #111111;
+      --muted: #9aa0b6;
     }
-    .logo{
-        margin-right: auto;
-        margin-left: 20px;}
-
-    .navigation .menu{
-        display: none;
-        position: absolute;
-        left: 0px;
-        top:100%;
-        background-color: #131313;
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-        box-shadow: 2px 30px 30px rgba(0,0,0,0.05);
-    }
-    .navigation .menu li{
-        width:100%;
-        margin: 0px;
-        padding: 0px;
-    }
-    .navigation .menu li a{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        margin: 0px;
-        padding: 20px;
-        border-bottom: 1px solid #161616;
-    }
-    .menu-icon{
-        display: block;
-    }
-    .navigation .menu-icon{
-        cursor: pointer;
-        float: right;
-        padding: 10px 0px;
-        position: relative;
-        user-select: none;
-        z-index: 106;
-    }
-    .navigation .menu-icon .nav-icon{
-        background-color: #ffffff;
-        display: block;
-        position: relative;
-        height: 2px;
-        transition: background 0.2s ease-out;
-        width: 25px;
-    }
-    .navigation .menu-icon .nav-icon::before,
-    .navigation .menu-icon .nav-icon::after{
-        background-color: #ffffff;
-        content: '';
-        position: absolute;
-        height: 100%;
-        transition: all ease-out 0.2s;
-        width: 100%;
+    html,body{height:100%}
+    body{
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: #e6e6e6;
+      -webkit-font-smoothing:antialiased;
+      cursor: none; /* vamos customizar */
     }
 
-    .navigation .menu-icon .nav-icon::before{
-        top: 9px;
+    /* custom cursor */
+    .cursor {
+      position: fixed;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: transparent;
+      border: 2px solid #39ff14; /* mira verde */
+      pointer-events: none;
+      transform: translate(-50%,-50%);
+      z-index: 9999;
+      mix-blend-mode: difference;
+      transition: transform .08s ease-out, background .12s;
     }
-    .navigation .menu-icon .nav-icon::after{
-        top: -9px;
+    .cursor.big{ transform: translate(-50%,-50%) scale(2); background: rgba(57,255,20,.06); }
+
+    /* typing caret */
+    .cursor-typed::after{
+      content: '';
+      display:inline-block;
+      width:2px;
+      height:1.1em;
+      background: var(--laravel-purple);
+      margin-left:6px;
+      animation: blink 1s steps(2) infinite;
+      vertical-align:middle;
     }
-    .navigation .menu-icon:checked ~ .menu-icon .nav-icon,
-    .navigation .menu-btn:checked ~ .menu-icon .nav-icon{
-        background-color: transparent;
+    @keyframes blink{50%{opacity:0}}
+
+    /* particle canvas full */
+    #bg-canvas{ position:fixed; inset:0; z-index:0; }
+
+    /* main container layering */
+    .site { position:relative; z-index:10; }
+
+    /* card glow hover */
+    .glow-card{
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+      border: 1px solid rgba(255,255,255,.04);
+      transition: transform .28s ease, box-shadow .28s ease, border-color .28s;
     }
-    .navigation .menu-btn:checked ~ .menu-icon .nav-icon::before{
-        transform: rotate(-45deg);
-        top: 0px;
+    .glow-card:hover{
+      transform: translateY(-8px) rotateX(6deg);
+      box-shadow: 0 20px 40px rgba(0,0,0,.6), 0 0 24px rgba(141,148,180,.06);
+      border-color: rgba(141,148,180,.45);
     }
-    .navigation .menu-btn:checked ~ .menu-icon .nav-icon::after{
-        transform: rotate(45deg);
-        top: 0px;
+
+    /* project hover 3D */
+    .proj{
+      transform-style: preserve-3d;
+      perspective: 1000px;
     }
- 
-    .navigation .menu-btn:checked ~ .menu{
-        display: block;
-    }   
-}
-@media(max-width:850px){
-    .services-box-container{
-        grid-template-columns: 1fr;
+    .proj .inner{
+      transition: transform .35s cubic-bezier(.14,.86,.21,1), box-shadow .35s;
+      transform-origin: center;
     }
-}
-@media(max-width:724px){
-    .main-content h1{
-        font-size: 1.8rem;
-        line-height: 2.2rem;
-        max-width: 80%;
-        letter-spacing: 0.3px;
+    .proj:hover .inner{
+      transform: rotateX(6deg) rotateY(-8deg) translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,.7);
     }
-}
-@media(max-width:724px){
-    #about-me h2{
-        font-size: 1.8rem;
-        line-height: 2.2rem;
+
+    /* timeline */
+    .timeline{ position:relative; }
+    .timeline::before{
+      content:'';
+      position:absolute;
+      left:20px;
+      top:0;
+      bottom:0;
+      width:3px;
+      background: linear-gradient(180deg, rgba(141,148,180,.16), rgba(141,148,180,.05));
+      border-radius:3px;
     }
-    .about-text h3{
-        font-size: 2rem;
-        line-height: 2.4rem;
+
+    /* terminal button */
+    .term-btn{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+      background: rgba(20,20,20,.6);
+      border:1px solid rgba(141,148,180,.12);
+      padding:.6rem 1rem;
+      border-radius:.5rem;
     }
-}
-@media(max-width:724px){
-    .services-heading h2{
-        font-size: 1.8rem;
-        line-height: 2.2rem;
+
+    /* glitch effect */
+    .glitch {
+      position:relative;
+      overflow:hidden;
     }
-}
-@media(max-width:724px){
-    .contact h3{
-        font-size: 2rem;
-        line-height: 2.5rem;
+    .glitch:before,.glitch:after{
+      content:attr(data-text);
+      position:absolute;
+      left:0; top:0;
+      width:100%;
+      height:100%;
+      mix-blend-mode: screen;
+      opacity:.8;
+      pointer-events:none;
     }
-}
-    </style>
+    .glitch:before{ color: #ff4d4d; transform: translate(2px,-2px); clip-path: inset(0 0 60% 0); animation: g1 .6s infinite linear; }
+    .glitch:after{ color: #1affd6; transform: translate(-2px,2px); clip-path: inset(40% 0 0 0); animation:g2 .8s infinite linear; }
+    @keyframes g1{ 0%{transform:translate(2px,-2px)}50%{transform:translate(-6px,6px)}100%{transform:translate(2px,-2px)} }
+    @keyframes g2{ 0%{transform:translate(-2px,2px)}50%{transform:translate(6px,-6px)}100%{transform:translate(-2px,2px)} }
+
+    /* small helpers */
+    .muted{ color:var(--muted) }
+    .tag{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; font-size:.78rem; padding:.2rem .5rem; border-radius:6px; background:rgba(141,148,180,.06); color:var(--laravel-purple); border:1px solid rgba(141,148,180,.06) }
+  </style>
 </head>
-<body>
-    <section id="main">
-        <header id="header">
-            <nav class="navigation">
-                <a href="#" class="logo">k</a>
+<body class="antialiased">
 
-                <ul class="menu">
-                    <li><a href="#main">Aqui</a></li>
-                    <li><a href="#about-me">Sobre min</a></li>
-                    <li><a href="#our-services">Meus serviços</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
+  <!-- particle canvas -->
+  <canvas id="bg-canvas"></canvas>
 
-                <div class="nav-social">
-                  <a href="https://github.com/kazuha4-sys/"><i class="fa fa-github"></i></a>
-                  <a href="https://www.instagram.com/kauan_2.04/"><i class="fa-brands fa-instagram"></i></a>
+  <!-- custom cursor -->
+  <div class="cursor" id="cursor-dot"></div>
+
+  <div class="site">
+    <!-- NAV -->
+    <header class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+      <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-black font-bold">k</a>
+
+      <nav class="hidden md:flex gap-8 items-center text-sm text-gray-300">
+        <a href="#main" class="hover:text-white transition">Início</a>
+        <a href="#about-me" class="hover:text-white transition">Sobre</a>
+        <a href="#projects" class="hover:text-white transition">Projetos</a>
+        <a href="#our-services" class="hover:text-white transition">Serviços</a>
+        <a href="#contact" class="hover:text-white transition">Contato</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/kazuha4-sys/" class="text-gray-300 hover:text-white"><i class="fa-brands fa-github text-lg"></i></a>
+        <a href="https://www.instagram.com/kauan_2.04/" class="text-gray-300 hover:text-white"><i class="fa-brands fa-instagram text-lg"></i></a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="main" class="text-center px-6">
+      <img src="" alt="Eu" class="mx-auto w-28 h-28 rounded-full object-cover bg-gray-800 border border-gray-700">
+      <p class="mt-4 text-sm text-[#8d94b4] tracking-widest">DESENVOLVEDOR Back-End</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold mt-3">Oi, eu sou o <span class="text-white">Kauan Cybis</span></h1>
+      <h2 class="mt-3 text-xl text-gray-300"><span id="typed" class="cursor-typed"></span></h2>
+      <p class="max-w-2xl mx-auto text-gray-400 mt-6">Faço Back-end com amor, um pouco de Front-End quando necessário e muito café. Gosto de sistemas rápidos, limpos e com personalidade.</p>
+
+      <div class="mt-8 flex items-center justify-center gap-4">
+        <a class="term-btn group inline-flex items-center gap-3" href="#projects">
+          <span class="text-[#8d94b4] font-semibold">&gt;_</span>
+          <span class="text-gray-200">Ver Projetos</span>
+        </a>
+        <a class="bg-[#8d94b4]/20 px-5 py-2 rounded-md text-white tag" href="cv/cv.docx" download>Download CV <i class="fa-solid fa-download ml-2"></i></a>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="about-me" class="max-w-6xl mx-auto px-6 py-12">
+      <div class="flex flex-col md:flex-row gap-8 items-start">
+        <div class="w-full md:w-1/2 glow-card p-6 rounded-lg border">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="text-xl font-semibold">Sobre mim</h3>
+              <p class="text-gray-400 mt-2">Desenvolvedor Back-end com noções de Front. Curto otimização, Frameworks e ferramentas modernas.</p>
+            </div>
+            <div class="text-sm text-gray-400">
+              <div class="tag">DEDSEC</div>
+            </div>
+          </div>
+
+          <div class="mt-6 grid grid-cols-2 gap-3">
+            <!-- skill cards -->
+            <div class="p-3 rounded-md proj">
+              <div class="inner glow-card p-4 rounded-md">
+                <div class="flex items-center gap-3">
+                  <i class="fa-brands fa-js text-lg w-10 h-10 rounded-md flex items-center justify-center text-white" style="background:rgba(255,255,255,.03)"></i>
+                  <div>
+                    <div class="font-semibold">JavaScript</div>
+                    <div class="text-sm text-gray-400">Frontend & interatividade</div>
+                  </div>
                 </div>
-            </nav>
-        </header>
-
-        <div class="main-content">
-            <img src="" alt="Eu">
-            <strong>Oi, Eu sou o Kauan Cybis</strong>
-            <span>Eu sou um Desenvolvedor Front-End</span>
-            <h1>Apaixonado em criação de Websites.</h1>
-            <p>Eu sou alguém que busca constantemente aprender e inovar no mundo da programação e do design. Sempre em busca de novas soluções e formas de aprimorar a experiência do usuário, seja no front-end ou integrando co um pouco de back-end.</p>
-        </div>
-    </section>
-
-    <section id="about-me">
-        <strong>Sobre mim</strong>
-        <h2>Oii, Eu sou um Desenvolvedor Front-End.</h2>
-        <div class="about-text">
-            <h3>Apaixonado na criação de Websites.</h3>
-            <p>Tenho habilidades sólidas em front-end, dominando HTML, CSS e JavaScript para criar interfaces modernas, interativas e responsivas. Gosto de transformar ideias em experiências visuais incríveis, sempre focando na usabilidade e no impacto visual.</p>
-            <p>Além disso, possuo alguns conhecimentos em PHP e Python, o que me permite integrar minhas criações com um pouco do back-end, entregando projetos completos e funcionais. Amo explorar novas tendências de design e tecnologia, sempre buscando inovar e levar minhas habilidades para o próximo nível.</p>
-            <p>Seja desenvolvendo interfaces intuitivas, animando elementos ou trazendo funcionalidade ao front-end, estou sempre em busca de criar soluções que impressionem visualmente e atendam às expectativas dos usuários.</p>
-            <a href="cv/cv.docx" download="cv">Baixe meu Curriculo <i class="fa-solid fa-download"></i></a>
-        </div>
-    </section>
-
-    <section id="our-services">
-        <div class="services-heading">
-            <div class="services-heading-text">
-                <strong>Meus Serviços</strong>
-                <h2>Alta Qualidade nos serviçoes para você</h2>
-            </div>
-        </div>
-
-        <div class="services-box-container">
-            <div class="service-box s-box1">
-                <i class="fa-solid fa-desktop"></i>
-
-                <strong>Desenvolvimento Web</strong>
-
-                <p>Crio sites visualmente deslumbrantes e intuitivos que deixam uma impressão duradoura. Entre em contato conosco agora.</p>
-
-                <a href="#contact">Me Contate</a>
+              </div>
             </div>
 
-            <div class="service-box s-box1">
-                <i class="fa-solid fa-code"></i>
-
-                <strong>Front-End Tecnologia</strong>
-                <p>Uso as tecnologias mais recentes para criar sites rápidos e responsivos.</p>
-
-                <a href="#contact">Me Contate</a>
+            <div class="p-3 rounded-md proj">
+              <div class="inner glow-card p-4 rounded-md">
+                <div class="flex items-center gap-3">
+                  <i class="fa-brands fa-php text-lg w-10 h-10 rounded-md flex items-center justify-center text-white" style="background:rgba(255,255,255,.03)"></i>
+                  <div>
+                    <div class="font-semibold">PHP / Laravel</div>
+                    <div class="text-sm text-gray-400">Back-end & APIs</div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="service-box s-box1">
-                <!--icon-->
-                <i class="fa-solid fa-ranking-star"></i>
-                <!--title-->
-                <strong>Cronograma</strong>
-                <!--details-->
-                <p>O desenvolvimento do site e a entrega será feita dentro do prazo combinado. Comprometo-me a garantir a qualidade e o funcionamento adequado de todas as funcionalidades antes da data final.</p>
-                <!--read more-->
-                <a href="#contact">Me Contate</a>
-            </div><!--box-end-->
+            <div class="p-3 rounded-md proj">
+              <div class="inner glow-card p-4 rounded-md">
+                <div class="flex items-center gap-3">
+                  <i class="fa-brands fa-python text-lg w-10 h-10 rounded-md flex items-center justify-center text-white" style="background:rgba(255,255,255,.03)"></i>
+                  <div>
+                    <div class="font-semibold">Python</div>
+                    <div class="text-sm text-gray-400">Automação & ML</div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <span class="service-btn">Me contate para te ajudar nos seus serviços<a href="#contact">Vamos começar</a></span>
+            <div class="p-3 rounded-md proj">
+              <div class="inner glow-card p-4 rounded-md">
+                <div class="flex items-center gap-3">
+                  <i class="fa-brands fa-html5 text-lg w-10 h-10 rounded-md flex items-center justify-center text-white" style="background:rgba(255,255,255,.03)"></i>
+                  <div>
+                    <div class="font-semibold">HTML / CSS</div>
+                    <div class="text-sm text-gray-400">Layouts & Responsividade</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+                        <div class="p-3 rounded-md proj">
+              <div class="inner glow-card p-4 rounded-md">
+                <div class="flex items-center gap-3">
+                  <i class="fa-brands fa-php text-lg w-10 h-10 rounded-md flex items-center justify-center text-white" style="background:rgba(255,255,255,.03)"></i>
+                  <div>
+                    <div class="font-semibold">tailwindcss</div>
+                    <div class="text-sm text-gray-400">estilização de Sites</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
+
+        <!-- timeline -->
+        <div class="w-full md:w-1/2 p-6 glow-card rounded-lg border">
+          <h3 class="font-semibold text-lg">Linha do tempo</h3>
+          <div class="mt-6 timeline space-y-8 pl-10">
+            <div class="relative">
+              <div class="absolute left-0 top-1 w-4 h-4 rounded-full bg-[#8d94b4] border-2 border-black"></div>
+              <div class="text-sm text-gray-300 font-semibold">2025 — Freelance & Projetos</div>
+              <div class="text-gray-400 text-sm mt-1">Construção de portfólios, integrações e microsserviços.</div>
+            </div>
+
+            <div class="relative">
+              <div class="absolute left-0 top-1 w-4 h-4 rounded-full bg-[#8d94b4] border-2 border-black"></div>
+              <div class="text-sm text-gray-300 font-semibold">2024 — Aprimoramento em Laravel</div>
+              <div class="text-gray-400 text-sm mt-1">Sistemas de autenticação e APIs REST.</div>
+            </div>
+
+            <div class="relative">
+              <div class="absolute left-0 top-1 w-4 h-4 rounded-full bg-[#8d94b4] border-2 border-black"></div>
+              <div class="text-sm text-gray-300 font-semibold">2023 — Início</div>
+              <div class="text-gray-400 text-sm mt-1">Primeiros sites, muitos erros e muito aprendizado.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <section id="contact" class="contact">
-        <strong>O QUE VEM A SEGUIR</strong>
-        <h3>Vamos trabalhar juntos!</h3>
-        <p>Se você quiser conversar sobre um projeto no qual precisa de ajuda ou precisa de um conselho sobre design de produto, basta me enviar uma mensagem para <b>cleuzadadasilvadossantos@gmail.com</b>. Entrarei em contato com você em breve.</p>
-        <a href="https://mail.google.com" class="contact-btn">Envie um Email <i class="far fa-envelope"></i></a>
+    <!-- PROJECTS -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-12">
+      <div class="flex items-center justify-between">
+        <h3 class="text-2xl font-semibold">Projetos</h3>
+        <div class="text-sm text-gray-400">Clique para ver mais</div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-6">
+        <!-- project card -->
+        <article class="proj glow-card p-4 rounded-lg">
+          <div class="inner">
+            <div class="h-40 bg-[linear-gradient(180deg,#111,rgba(255,255,255,.02))] rounded-md flex items-center justify-center text-white text-lg font-semibold">Projeto A</div>
+            <h4 class="mt-4 font-semibold">Dashboard Laravel</h4>
+            <p class="text-sm text-gray-400 mt-2">Painel administrativo com autenticação social e WebSocket.</p>
+            <div class="mt-4 flex gap-2 items-center">
+              <span class="tag">Laravel</span><span class="tag">Tailwind</span>
+              <a href="#" class="ml-auto text-[#8d94b4] hover:underline">Ver →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj glow-card p-4 rounded-lg">
+          <div class="inner">
+            <div class="h-40 bg-[linear-gradient(180deg,#111,rgba(255,255,255,.02))] rounded-md flex items-center justify-center text-white text-lg font-semibold">Projeto B</div>
+            <h4 class="mt-4 font-semibold">Site Pessoal</h4>
+            <p class="text-sm text-gray-400 mt-2">Portfólio responsivo com animações e CMS simples.</p>
+            <div class="mt-4 flex gap-2 items-center">
+              <span class="tag">HTML</span><span class="tag">JS</span>
+              <a href="#" class="ml-auto text-[#8d94b4] hover:underline">Ver →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj glow-card p-4 rounded-lg">
+          <div class="inner">
+            <div class="h-40 bg-[linear-gradient(180deg,#111,rgba(255,255,255,.02))] rounded-md flex items-center justify-center text-white text-lg font-semibold">Projeto C</div>
+            <h4 class="mt-4 font-semibold">Bot & Scripts</h4>
+            <p class="text-sm text-gray-400 mt-2">Automação e ferramentas para produtividade.</p>
+            <div class="mt-4 flex gap-2 items-center">
+              <span class="tag">Python</span><span class="tag">Bash</span>
+              <a href="#" class="ml-auto text-[#8d94b4] hover:underline">Ver →</a>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <footer>
-        <span>Copyright 2025 - Kauan Portfolio</span>
+    <!-- CONTACT -->
+    <section id="our-services" class="max-w-6xl mx-auto px-6 py-12">
+      <div class="glow-card p-6 rounded-lg border">
+        <div class="flex flex-col md:flex-row gap-6 items-center justify-between">
+          <div>
+            <h3 class="text-xl font-semibold">Vamos trabalhar juntos?</h3>
+            <p class="text-gray-400 mt-2">Me chama pra trocar ideia sobre o projeto e a gente monta algo massa.</p>
+          </div>
+          <div class="flex gap-4">
+            <a href="mailto:cleuzadadasilvadossantos@gmail.com" class="term-btn inline-flex items-center gap-3">
+              <span class="text-[#8d94b4]">&gt;_</span> <span>Me envie um email</span>
+            </a>
+            <a href="https://github.com/kazuha4-sys/" class="px-4 py-2 rounded-md border border-gray-700">Github</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <a href="portifolio.html" class="footer-logo">Kauan Portfolio</a>
+    <!-- FOOTER -->
+    <footer class="max-w-6xl mx-auto px-6 py-8 text-center text-gray-400">
+      <div class="mb-2">Copyright 2025 — Kauan Portfolio</div>
+      <div class="text-sm">Powered by <span class="text-white font-semibold">Kazuha</span> • <span id="foot-blink" class="text-[#8d94b4]">DEDSEC</span></div>
     </footer>
 
+  </div> <!-- site -->
+
+  <script>
+    /* ---------- typing effect ---------- */
+    const phrases = ['Sou Programador Back-End', 'Curto Laravel e PHP', 'Faço sites bonitos e rápidos', 'Gosto de café e bugs difíceis'];
+    let pIndex = 0, charIndex = 0, forward = true;
+    const el = document.getElementById('typed');
+
+    function typeLoop(){
+      if(!el) return;
+      const txt = phrases[pIndex];
+      if(forward){
+        charIndex++;
+        el.textContent = txt.slice(0,charIndex);
+        if(charIndex === txt.length){ forward=false; setTimeout(typeLoop,1200); return; }
+      } else {
+        charIndex--;
+        el.textContent = txt.slice(0,charIndex);
+        if(charIndex === 0){ forward=true; pIndex = (pIndex+1)%phrases.length; }
+      }
+      setTimeout(typeLoop, forward?40:25);
+    }
+    typeLoop();
+
+    /* ---------- custom cursor ---------- */
+    const cursor = document.getElementById('cursor-dot');
+    document.addEventListener('mousemove', e=>{
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+    });
+    // scale on interactive hover
+    document.querySelectorAll('a, button, .proj, .term-btn').forEach(el=>{
+      el.addEventListener('mouseenter', ()=> cursor.classList.add('big'));
+      el.addEventListener('mouseleave', ()=> cursor.classList.remove('big'));
+    });
+
+    /* ---------- particle background (simple) ---------- */
+    const canvas = document.getElementById('bg-canvas');
+    const ctx = canvas.getContext('2d');
+    let W = canvas.width = innerWidth;
+    let H = canvas.height = innerHeight;
+    window.addEventListener('resize', ()=>{ W = canvas.width = innerWidth; H = canvas.height = innerHeight; init(); });
+
+    const particles = [];
+    function init(){
+      particles.length = 0;
+      const count = Math.floor((W*H)/(1600*1)); // density
+      for(let i=0;i<count;i++){
+        particles.push({
+          x: Math.random()*W,
+          y: Math.random()*H,
+          vx: (Math.random()-0.5)*0.3,
+          vy: (Math.random()-0.5)*0.3,
+          r: Math.random()*1.6 + 0.4,
+          alpha: Math.random()*0.6 + 0.15
+        });
+      }
+    }
+    function draw(){
+      ctx.clearRect(0,0,W,H);
+      for(let p of particles){
+        p.x += p.vx; p.y += p.vy;
+        if(p.x<0) p.x = W;
+        if(p.x>W) p.x = 0;
+        if(p.y<0) p.y = H;
+        if(p.y>H) p.y = 0;
+        ctx.beginPath();
+        ctx.fillStyle = 'rgba(141,148,180,'+p.alpha+')';
+        ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+        ctx.fill();
+      }
+      requestAnimationFrame(draw);
+    }
+    init(); draw();
+
+    /* ---------- footer blink (small charm) ---------- */
+    const foot = document.getElementById('foot-blink');
+    setInterval(()=> foot.style.opacity = foot.style.opacity == '0.2' ? '1' : '0.2', 900);
+
+    /* ---------- keyboard easter-egg 'dedsec' -> glitch ---------- */
+    let keyBuffer = '';
+    const SECRET = 'dedsec';
+    const body = document.body;
+    document.addEventListener('keydown', (e)=>{
+      keyBuffer += e.key.toLowerCase();
+      if(keyBuffer.length > SECRET.length) keyBuffer = keyBuffer.slice(-SECRET.length);
+      if(keyBuffer === SECRET){
+        triggerGlitch();
+        keyBuffer = '';
+      }
+    });
+
+    function triggerGlitch(){
+      const el = document.querySelector('.site');
+      el.classList.add('glitch');
+      el.setAttribute('data-text','');
+      // add temporary class on hero header to show glitch look
+      setTimeout(()=> el.classList.remove('glitch'), 2800);
+    }
+
+    /* ---------- small accessibility: show real cursor on focus for forms (if any) ---------- */
+    document.addEventListener('focusin', ()=> document.body.style.cursor = 'default');
+    document.addEventListener('focusout', ()=> document.body.style.cursor = 'none');
+
+    /* ---------- small perf: pause particles when not visible ---------- */
+    document.addEventListener('visibilitychange', ()=>{
+      if(document.hidden){ /* stop drawing */ } else { /* resume */ }
+    });
+
+  </script>
 </body>
 </html>
